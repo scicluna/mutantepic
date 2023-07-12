@@ -1,3 +1,4 @@
+import { genericTable } from "../minmaxtable";
 import { roll } from "./castedetails";
 export function traitValue() {
     return [

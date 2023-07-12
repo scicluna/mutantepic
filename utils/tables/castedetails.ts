@@ -1,12 +1,12 @@
 export function roll(dice: number): number {
-    return Math.floor(Math.random() * dice)
+    return Math.ceil(Math.random() * dice)
 }
 
 export function casteDetail() {
     return [
-        { caste: "Slave Laborer", endurance: roll(10), strength: roll(10), agility: 0, accuracy: 0, intelligence: -roll(10), perception: -roll(6), willpower: -roll(6), appearance: -roll(10), outfitting: "ESC", automaticSkills: [], skillSetRolls: [] },
+        { caste: "Slave, Labor", endurance: roll(10), strength: roll(10), agility: 0, accuracy: 0, intelligence: -roll(10), perception: -roll(6), willpower: -roll(6), appearance: -roll(10), outfitting: "ESC", automaticSkills: [], skillSetRolls: [] },
         {
-            caste: "Slave, Kitchen Hand",
+            caste: "Slave, Kitchen",
             endurance: -roll(6),
             strength: -roll(6),
             agility: 0,
@@ -20,77 +20,7 @@ export function casteDetail() {
             skillSetRolls: []
         },
         {
-            caste: "Slave, Personal Servant",
-            endurance: -roll(6),
-            strength: -roll(6),
-            agility: 0,
-            accuracy: 0,
-            intelligence: roll(6),
-            perception: roll(6),
-            willpower: -roll(6),
-            appearance: roll(6),
-            outfitting: "ESC",
-            automaticSkills: [],
-            skillSetRolls: ["Misc."]
-        },
-        {
-            caste: "Slave, Whore",
-            endurance: -roll(6),
-            strength: -roll(6),
-            agility: 0,
-            accuracy: 0,
-            intelligence: -roll(6),
-            perception: 0,
-            willpower: -roll(6),
-            appearance: roll(6),
-            outfitting: "ESC",
-            automaticSkills: ["Erotic"],
-            skillSetRolls: ["Arts"]
-        },
-        {
-            caste: "Slave, Court Attendant",
-            endurance: -roll(6),
-            strength: -roll(6),
-            agility: 0,
-            accuracy: 0,
-            intelligence: -roll(6),
-            perception: roll(6),
-            willpower: -roll(6),
-            appearance: roll(6),
-            outfitting: "ESC",
-            automaticSkills: [],
-            skillSetRolls: [`Misc.`, `${roll(3)} rolls`]
-        },
-        {
-            caste: "Slave, Gladiator",
-            endurance: roll(2),
-            strength: roll(2),
-            agility: roll(8),
-            accuracy: roll(8),
-            intelligence: -roll(10),
-            perception: roll(8),
-            willpower: -roll(4),
-            appearance: -roll(2),
-            outfitting: "ESC",
-            automaticSkills: ["Brawling"],
-            skillSetRolls: [`${roll(4)} Warrior`, `4 + ${roll(4)} rolls`]
-        },
-        {
-            caste: "Fisher",
-            endurance: roll(6),
-            strength: roll(6),
-            agility: 0,
-            accuracy: 0,
-            intelligence: 0,
-            perception: roll(8),
-            willpower: 0,
-            appearance: 0,
-            outfitting: "PR",
-            automaticSkills: ["Spear"],
-            skillSetRolls: ["Weapons Expert", `${roll(3)} Misc.`]
-        },
-        {
-            caste: "Slave, Personal Servant",
+            caste: "Slave, Servant",
             endurance: -roll(6),
             strength: -roll(6),
             agility: 0,
@@ -118,7 +48,7 @@ export function casteDetail() {
             skillSetRolls: ["Arts"]
         },
         {
-            caste: "Slave, Court Attendant",
+            caste: "Slave, Court",
             endurance: -roll(6),
             strength: -roll(6),
             agility: 0,
@@ -258,7 +188,7 @@ export function casteDetail() {
             skillSetRolls: [`Misc.`, `${roll(3)} rolls`]
         },
         {
-            caste: 1,
+            caste: `Student`,
             endurance: -roll(6),
             strength: -roll(6),
             agility: 0,
@@ -327,7 +257,7 @@ export function casteDetail() {
             automaticSkills: [], skillSetRolls: [`Warrior 1`, `${roll(2)} Misc.`]
         },
         {
-            caste: `Militia`, endurance: roll(6), strength: roll(6), agility: 0, accuracy: 0,
+            caste: `Militia Soldier`, endurance: roll(6), strength: roll(6), agility: 0, accuracy: 0,
             intelligence: 0, perception: 0, willpower: 0, appearance: 0, outfitting: `MO`,
             automaticSkills: [], skillSetRolls: [`Warrior ${roll(3)}`, `${roll(2)} Misc.`]
         },
@@ -337,7 +267,7 @@ export function casteDetail() {
             automaticSkills: [`${roll(3)} Brawling`], skillSetRolls: [`Warrior ${roll(3)}`, `${roll(2)} Misc.`]
         },
         {
-            caste: `Infantry`, endurance: roll(12), strength: roll(12), agility: 0, accuracy: 0,
+            caste: `Infantryman`, endurance: roll(12), strength: roll(12), agility: 0, accuracy: 0,
             intelligence: 0, perception: 0, willpower: 0, appearance: 0, outfitting: `WE`,
             automaticSkills: [], skillSetRolls: [`Warrior ${roll(6)}`, `${roll(2)} Misc.`]
         },
@@ -352,7 +282,7 @@ export function casteDetail() {
             automaticSkills: [`${roll(3)} Brawling`], skillSetRolls: [`Warrior ${roll(6)}`, `${roll(4)} Misc.`]
         },
         {
-            caste: `Elite`, endurance: roll(2), strength: roll(2), agility: roll(8), accuracy: roll(8),
+            caste: `Elite Soldier`, endurance: roll(2), strength: roll(2), agility: roll(8), accuracy: roll(8),
             intelligence: 0, perception: 0, willpower: roll(8), appearance: 0, outfitting: `WE`,
             automaticSkills: [`${roll(4)} Brawling`], skillSetRolls: [`Warrior ${roll(6)} + 4`, `${roll(4)} Misc.`]
         }

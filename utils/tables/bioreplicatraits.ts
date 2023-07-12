@@ -1,7 +1,7 @@
 import { roll } from "./castedetails"
 export function bioreplicaTraits() {
     return {
-        pleasure: {
+        Pleasure: {
             endurance: 18 + roll(20),
             strength: 15 + roll(20),
             agility: 30 + roll(20) + roll(20),
@@ -11,7 +11,7 @@ export function bioreplicaTraits() {
             willpower: 10 + roll(20),
             appearance: 50 + roll(100)
         },
-        industrial: {
+        Industrial: {
             endurance: 50 + roll(20) + roll(20) + roll(20),
             strength: 60 + roll(20) + roll(20) + roll(20),
             agility: 30 + roll(20),
@@ -21,7 +21,7 @@ export function bioreplicaTraits() {
             willpower: 20 + roll(20) + roll(20),
             appearance: 10 + roll(10) + roll(10)
         },
-        clerical: {
+        Clerical: {
             endurance: 15 + roll(10) + roll(10),
             strength: 15 + roll(10) + roll(10),
             agility: 30 + roll(20) + roll(20),
@@ -31,7 +31,7 @@ export function bioreplicaTraits() {
             willpower: 15 + roll(20) + roll(20),
             appearance: 20 + roll(20) + roll(20) + roll(20)
         },
-        infiltration: {
+        Infiltration: {
             endurance: 40 + roll(20) + roll(20),
             strength: 35 + roll(20) + roll(20),
             agility: 60 + roll(20) + roll(20) + roll(20),
@@ -41,7 +41,7 @@ export function bioreplicaTraits() {
             willpower: 20 + roll(20) + roll(20) + roll(20),
             appearance: 10 + roll(20) + roll(20) + roll(20)
         },
-        battle: {
+        Battle: {
             endurance: 60 + roll(100),
             strength: 60 + roll(20) + roll(20) + roll(20),
             agility: 40 + roll(20) + roll(20) + roll(20),

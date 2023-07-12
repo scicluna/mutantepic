@@ -1,4 +1,4 @@
-type character = {
+export type character = {
     name: string
     age: number
     race: string
@@ -14,4 +14,14 @@ type character = {
     outfitting: string
     automaticSkills: string[]
     skillSetRolls: string[]
+    dominateHand: string
+    swimming: string
+    primeMutations?: string[]
+    minorMutations?: string[]
+    flawMutations?: string[]
+    ghostMutations?: string[]
+    beastType?: string
 }
+
+//Note: Each bestial human PC is 33% likely to exhibit d3 primary and d2 minor mutations with a 1 in 10
+// chance of a flaw mutation

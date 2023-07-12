@@ -1,0 +1,2 @@
+export const minorMutations = [{ min: 1, max: 16, value: "Blood Color Alteration" }, { min: 17, max: 21, value: "Eye lights" }, { min: 22, max: 23, value: "Hibernation" }, { min: 24, max: 26, value: "Longevity" }, { min: 27, max: 30, value: "Nutriment Cache" }, { min: 31, max: 33, value: "Offspring Link" }, { min: 34, max: 91, value: "Physical Alterations" }, { min: 92, max: 94, value: "Pouch" }, { min: 95, max: 97, value: "Wakefulness" }, { min: 98, max: 100, value: "Underdeveloped limb" }
+]
