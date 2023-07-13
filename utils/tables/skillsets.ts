@@ -77,7 +77,7 @@ export const educatedSkillSets = [
     { min: 67, max: 67, value: "Relic Knowledge" },
     { min: 68, max: 98, value: "Stealth" },
     { min: 99, max: 99, value: "Technician Skill" },
-    { min: 0, max: 0, value: "Unarmed Combat" }
+    { min: 100, max: 100, value: "Unarmed Combat" }
 ]
 export const miscSkillSets = [
     { min: 1, max: 3, value: "Barter" },
@@ -109,5 +109,5 @@ export const miscSkillSets = [
     { min: 83, max: 86, value: "Tracking" },
     { min: 87, max: 93, value: "Unarmed Combat" },
     { min: 94, max: 96, value: "Wilderness Survival1" },
-    { min: 97, max: 0, value: "Weapons Expert*" }
+    { min: 97, max: 100, value: "Weapons Expert*" }
 ]

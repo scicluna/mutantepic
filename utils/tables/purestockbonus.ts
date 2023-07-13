@@ -1,5 +1,5 @@
 import { roll } from "./castedetails"
-type Bonus = {
+export type Bonus = {
     min: number
     max: number
     value: {
@@ -31,6 +31,5 @@ export function pureStockBonus(): Bonus[] {
         { min: 91, max: 97, value: { automaticSkill: "Martial Arts" } },
         { min: 98, max: 99, value: { endurance: 2, strength: 2, agility: 2, accuracy: 2, intelligence: 2, willpower: 2, appearance: 2 } },
         { min: 100, max: 100, value: { endurance: roll(6), strength: roll(6), agility: roll(6), accuracy: roll(6), intelligence: roll(6), willpower: roll(6), appearance: roll(6) } },
-
     ]
 }

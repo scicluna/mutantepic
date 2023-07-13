@@ -2,6 +2,7 @@ export type character = {
     name: string
     age: number
     race: string
+    sex: string
     caste: string
     endurance: number[]
     strength: number[]
@@ -16,6 +17,11 @@ export type character = {
     skillSetRolls: string[]
     dominateHand: string
     swimming: string
+    movement: string
+    miscEquipment: string[]
+    wepsEquipment: string[]
+    armorEquipment: string[]
+    implants?: string[]
     primeMutations?: string[]
     minorMutations?: string[]
     flawMutations?: string[]

@@ -8,7 +8,7 @@ export function cloneTraits() {
             accuracy: 20 + roll(20) + roll(20),
             intelligence: 10 + roll(20) + roll(20),
             perception: 20 + roll(20) + roll(20),
-            will_power: 10 + roll(1 * 10),
+            willpower: 10 + roll(1 * 10),
             appearance: 60 + roll(1 * 100)
         },
         Labor: {
@@ -18,7 +18,7 @@ export function cloneTraits() {
             accuracy: 40 + roll(1 * 20),
             intelligence: 15 + roll(1 * 20),
             perception: 20 + roll(20) + roll(20),
-            will_power: 24 + roll(10) + roll(10),
+            willpower: 24 + roll(10) + roll(10),
             appearance: 10 + roll(10) + roll(10)
         },
         Military: {
@@ -28,7 +28,7 @@ export function cloneTraits() {
             accuracy: 50 + roll(20) + roll(20) + roll(20),
             intelligence: 27 + roll(20) + roll(20),
             perception: 58 + roll(20) + roll(20),
-            will_power: 30 + roll(20) + roll(20),
+            willpower: 30 + roll(20) + roll(20),
             appearance: 10 + roll(20) + roll(20)
         }
     }
