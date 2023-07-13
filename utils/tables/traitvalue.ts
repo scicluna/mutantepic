@@ -1,6 +1,6 @@
 import { genericTable } from "../minmaxtable";
 import { roll } from "./castedetails";
-export function traitValue() {
+export function traitValue(): genericTable[] {
     return [
         { min: 1, max: 1, value: 0 + roll(10) },
         { min: 2, max: 2, value: 11 },

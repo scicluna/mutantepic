@@ -45,10 +45,10 @@ function faKitTable(): genericTable[] {
         { min: 43, max: 47, value: `wrist gun, with ${roll(10) + roll(10)} pistol rounds` },
         { min: 48, max: 50, value: `stun stick, mini power cell has ${roll(20) + roll(20) + 10} rounds remaining` },
         { min: 51, max: 59, value: `assault rifle, with ${roll(10) + roll(10)} rifle rounds, , ${roll(100) <= 11 && `11% chance of ${roll(6)} armor piercing rounds.`}` },
-        { min: 60, max: 73, value: `pocket pistol, with ${roll(10) + roll(10) + roll(10)} pistol rounds, ${roll(100) <= 43 ? 'spare clip' : null}` },
-        { min: 74, max: 85, value: `auto pistol, with ${roll(10) + roll(10)} pistol rounds, ${roll(100) <= 58 ? 'spare clip' : null}` },
-        { min: 86, max: 89, value: `sub-machine gun, with ${roll(10) + roll(10)} pistol rounds, ${roll(100) <= 49 ? 'spare clip' : null}` },
-        { min: 90, max: 97, value: `survival rifle, with ${roll(10) + roll(10)} rifle rounds, ${roll(100) <= 26 ? 'spare clip' : null}` },
+        { min: 60, max: 73, value: `pocket pistol, with ${roll(10) + roll(10) + roll(10)} pistol rounds, ${roll(100) <= 43 ? 'spare clip' : ''}` },
+        { min: 74, max: 85, value: `auto pistol, with ${roll(10) + roll(10)} pistol rounds, ${roll(100) <= 58 ? 'spare clip' : ''}` },
+        { min: 86, max: 89, value: `sub-machine gun, with ${roll(10) + roll(10)} pistol rounds, ${roll(100) <= 49 ? 'spare clip' : ''}` },
+        { min: 90, max: 97, value: `survival rifle, with ${roll(10) + roll(10)} rifle rounds, ${roll(100) <= 26 ? 'spare clip' : ''}` },
         { min: 98, max: 100, value: `laser carbine, power cell has ${roll(10) + roll(10)} shots left` }
     ]
 
@@ -69,9 +69,9 @@ export function escKit() {
 }
 
 export function imKit() {
-    const misc = [`${roll(100) < 64 ? `${roll(100) + roll(100) + roll(100)}sp debt with ${roll(6) + roll(6)} months to pay off (or else)` : null}`,
+    const misc = [`${roll(100) < 64 ? `${roll(100) + roll(100) + roll(100)}sp debt with ${roll(6) + roll(6)} months to pay off (or else)` : ''}`,
         `Clothing is washed up, torn rags`, `${Math.max(roll(10) - 3, 0)}sp in a tattered belt pouch`, `Tinder box`, `${roll(6)} torches`,
-    `${roll(2) === 2 ? `lantern with ${roll(100)}ml oil` : null}`, `Wooden spoon`, `Woolen blanket`, `Sack`, `Backpack`, `${roll(6) + 1} meters of rope`,
+    `${roll(2) === 2 ? `lantern with ${roll(100)}ml oil` : ''}`, `Wooden spoon`, `Woolen blanket`, `Sack`, `Backpack`, `${roll(6) + 1} meters of rope`,
         `sandals`, `${roll(10) + roll(10)} days of dried rations`]
 
     const wepsScore = roll(10) - 1
@@ -107,7 +107,7 @@ export function prKit() {
 export function moKit() {
     const misc = [`${roll(10) + roll(10) + roll(10) + 10}sp`, `full lantern and bottle of oil`, `winter sleeping bag`, `hip sack`, `fishing gear`,
         `2 person tent`, `crowbar`, `pickaxe`, `soap`, `towel`, `toothbrush`, `wool coat with hood`, `wool pants and shirt`, `playing cards`,
-        `bone dice`, `${roll(100) <= 11 ? 'well trained and obedient farm dog whos the goodest of boys' : null}`, `${roll(100) <= 15 ? 'inherited relic weapon from classification WC-RC' : null}`,
+        `bone dice`, `${roll(100) <= 11 ? 'well trained and obedient farm dog whos the goodest of boys' : ''}`, `${roll(100) <= 15 ? 'inherited relic weapon from classification WC-RC' : ''}`,
     `${roll(10) + roll(10)} sp`, `tinder box`, `${roll(6) + roll(6)} torches`, `${roll(6) + roll(6)} candles`, 'cutlery set', 'full water skin (2L water)',
         `summer sleeping bag`, `coin pouch`, `backpack`, `${roll(8) + 2}m of rope`, `sewing kit`, `whetstone`, `shovel`, `work boots & work gloves`,
         `poncho`, `cotton pants and shirt`, `${roll(10) + roll(10) + roll(10) + 3} days of dried rations`]
@@ -125,8 +125,8 @@ export function moKit() {
 }
 
 export function weKit() {
-    const misc = [`${roll(100) + roll(100)} sp`, `${roll(100) <= 19 ? 'well trained and obedient farm dog whos the goodest of boys' : null} `,
-    `${roll(100) <= 74 ? 'inherited relic weapon from classification WC-R' : null} `, `${roll(100) <= 26 ? 'inherited relic weapon from classification WC-RC' : null} `,
+    const misc = [`${roll(100) + roll(100)} sp`, `${roll(100) <= 19 ? 'well trained and obedient farm dog whos the goodest of boys' : ''}`,
+    `${roll(100) <= 74 ? 'inherited relic weapon from classification WC-R' : ''}`, `${roll(100) <= 26 ? 'inherited relic weapon from classification WC-RC' : ''}`,
     `${roll(100) <= 29 && roll(6) <= 4 ? 'saddle horse' : 'riding dog'}`, `${roll(10) + roll(10) + roll(10) + 10}sp`, `full lantern and bottle of oil`, `winter sleeping bag`, `hip sack`, `fishing gear`,
         `2 person tent`, `crowbar`, `pickaxe`, `soap`, `towel`, `toothbrush`, `wool coat with hood`, `wool pants and shirt`, `playing cards`,
         `bone dice`, `${roll(10) + roll(10)} sp`, `tinder box`, `${roll(6) + roll(6)} torches`, `${roll(6) + roll(6)} candles`, 'cutlery set', 'full water skin (2L water)',
@@ -146,8 +146,8 @@ export function weKit() {
 }
 
 export function faKit() {
-    const misc = [`${roll(100) + 100} sp`, `${roll(12) + roll(12)}gp`, `${roll(100) <= 19 ? 'well trained and obedient farm dog whos the goodest of boys' : null} `,
-    `${roll(100) <= 74 ? 'inherited relic weapon from classification WC-R' : null} `, `${roll(100) <= 26 ? 'inherited relic weapon from classification WC-RC' : null} `,
+    const misc = [`${roll(100) + 100} sp`, `${roll(12) + roll(12)}gp`, `${roll(100) <= 19 ? 'well trained and obedient farm dog whos the goodest of boys' : ''}`,
+    `${roll(100) <= 74 ? 'inherited relic weapon from classification WC-R' : ''}`, `${roll(100) <= 26 ? 'inherited relic weapon from classification WC-RC' : ''}`,
     `${roll(100) <= 77 && roll(6) <= 4 ? 'saddle horse' : 'riding dog'}`, `${roll(10) + roll(10) + roll(10) + 10}sp`, `full lantern and bottle of oil`, `winter sleeping bag`, `hip sack`, `fishing gear`,
         `2 person tent`, `crowbar`, `pickaxe`, `soap`, `towel`, `toothbrush`, `wool coat with hood`, `wool pants and shirt`, `playing cards`,
         `bone dice`, `${roll(10) + roll(10)} sp`, `tinder box`, `${roll(6) + roll(6)} torches`, `${roll(6) + roll(6)} candles`, 'cutlery set', 'full water skin (2L water)',
@@ -166,8 +166,8 @@ export function faKit() {
 }
 
 export function waKit() {
-    const misc = [`${roll(1000) + roll(1000)} sp`, `${roll(100)}gp`, `${roll(1000) + roll(1000)}sp worth of jewelery`, `${roll(100) <= 26 ? 'well trained and obedient farm dog whos the goodest of boys' : null} `,
-    `${roll(100) <= 100 ? 'inherited relic weapon from classification WC-R' : null} `, `${roll(100) <= 76 ? 'inherited relic weapon from classification WC-RC' : null} `,
+    const misc = [`${roll(1000) + roll(1000)} sp`, `${roll(100)}gp`, `${roll(1000) + roll(1000)}sp worth of jewelery`, `${roll(100) <= 26 ? 'well trained and obedient farm dog whos the goodest of boys' : ''}`,
+    `${roll(100) <= 100 ? 'inherited relic weapon from classification WC-R' : ''}`, `${roll(100) <= 76 ? 'inherited relic weapon from classification WC-RC' : ''}`,
     `${roll(100) <= 89 && roll(6) <= 4 ? 'saddle horse' : 'riding dog'}`, `${roll(10) + roll(10) + roll(10) + 10}sp`, `full lantern and bottle of oil`, `winter sleeping bag`, `hip sack`, `fishing gear`,
         `2 person tent`, `crowbar`, `pickaxe`, `soap`, `towel`, `toothbrush`, `wool coat with hood`, `wool pants and shirt`, `playing cards`,
         `bone dice`, `${roll(10) + roll(10)} sp`, `tinder box`, `${roll(6) + roll(6)} torches`, `${roll(6) + roll(6)} candles`, 'cutlery set', 'full water skin (2L water)',

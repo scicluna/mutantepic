@@ -291,45 +291,45 @@ export function generateCharacter() {
 
     if (Character.outfitting === "ESC") {
         const { wepsEquipment, armorEquipment, miscEquipment } = escKit()
-        Character.wepsEquipment = wepsEquipment.filter(x => !x.includes('null'))
-        Character.armorEquipment = armorEquipment.filter(x => !x.includes('null'))
-        Character.miscEquipment = miscEquipment.filter(x => !x.includes('null'))
+        Character.wepsEquipment = wepsEquipment.filter(x => x != 'null')
+        Character.armorEquipment = armorEquipment.filter(x => x != 'null')
+        Character.miscEquipment = miscEquipment.filter(x => x != 'null')
     }
     if (Character.outfitting === "IM") {
         const { wepsEquipment, armorEquipment, miscEquipment } = imKit()
-        Character.wepsEquipment = wepsEquipment.filter(x => !x.includes('null'))
-        Character.armorEquipment = armorEquipment.filter(x => !x.includes('null'))
-        Character.miscEquipment = miscEquipment.filter(x => !x.includes('null'))
+        Character.wepsEquipment = wepsEquipment.filter(x => x != 'null')
+        Character.armorEquipment = armorEquipment.filter(x => x != 'null')
+        Character.miscEquipment = miscEquipment.filter(x => x != 'null')
     }
     if (Character.outfitting === "PR") {
         const { wepsEquipment, armorEquipment, miscEquipment } = prKit()
-        Character.wepsEquipment = wepsEquipment.filter(x => !x.includes('null'))
-        Character.armorEquipment = armorEquipment.filter(x => !x.includes('null'))
-        Character.miscEquipment = miscEquipment.filter(x => !x.includes('null'))
+        Character.wepsEquipment = wepsEquipment.filter(x => x != 'null')
+        Character.armorEquipment = armorEquipment.filter(x => x != 'null')
+        Character.miscEquipment = miscEquipment.filter(x => x != 'null')
     }
     if (Character.outfitting === "MO") {
         const { wepsEquipment, armorEquipment, miscEquipment } = moKit()
-        Character.wepsEquipment = wepsEquipment.filter(x => !x.includes('null'))
-        Character.armorEquipment = armorEquipment.filter(x => !x.includes('null'))
-        Character.miscEquipment = miscEquipment.filter(x => !x.includes('null'))
+        Character.wepsEquipment = wepsEquipment.filter(x => x != 'null')
+        Character.armorEquipment = armorEquipment.filter(x => x != 'null')
+        Character.miscEquipment = miscEquipment.filter(x => x != 'null')
     }
     if (Character.outfitting === "WE") {
         const { wepsEquipment, armorEquipment, miscEquipment } = weKit()
-        Character.wepsEquipment = wepsEquipment.filter(x => !x.includes('null'))
-        Character.armorEquipment = armorEquipment.filter(x => !x.includes('null'))
-        Character.miscEquipment = miscEquipment.filter(x => !x.includes('null'))
+        Character.wepsEquipment = wepsEquipment.filter(x => x != 'null')
+        Character.armorEquipment = armorEquipment.filter(x => x != 'null')
+        Character.miscEquipment = miscEquipment.filter(x => x != 'null')
     }
     if (Character.outfitting === "FA") {
         const { wepsEquipment, armorEquipment, miscEquipment } = faKit()
-        Character.wepsEquipment = wepsEquipment.filter(x => !x.includes('null'))
-        Character.armorEquipment = armorEquipment.filter(x => !x.includes('null'))
-        Character.miscEquipment = miscEquipment.filter(x => !x.includes('null'))
+        Character.wepsEquipment = wepsEquipment.filter(x => x != 'null')
+        Character.armorEquipment = armorEquipment.filter(x => x != 'null')
+        Character.miscEquipment = miscEquipment.filter(x => x != 'null')
     }
     if (Character.outfitting === "WA") {
         const { wepsEquipment, armorEquipment, miscEquipment } = waKit()
-        Character.wepsEquipment = wepsEquipment.filter(x => !x.includes('null'))
-        Character.armorEquipment = armorEquipment.filter(x => !x.includes('null'))
-        Character.miscEquipment = miscEquipment.filter(x => !x.includes('null'))
+        Character.wepsEquipment = wepsEquipment.filter(x => x != 'null')
+        Character.armorEquipment = armorEquipment.filter(x => x != 'null')
+        Character.miscEquipment = miscEquipment.filter(x => x != 'null')
     }
     return Character
 }

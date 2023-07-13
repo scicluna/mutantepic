@@ -1,9 +1,9 @@
-import Image from 'next/image'
+import Form from "@/components/form"
 
 export default function Home() {
   return (
-    <main>
-      hello
+    <main className="bg-gray-50" style={{ height: '100dvh', width: '100dvw' }}>
+      <Form />
     </main>
   )
 }

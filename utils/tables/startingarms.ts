@@ -1,12 +1,13 @@
 import { roll } from "./castedetails";
 export function weaponsTable() {
     return [
+        { num: -3, result: `Length of chain, about 40cm long, attached to one wrist` },
         { num: -2, result: `Club` },
         { num: -1, result: `Staff` },
-        { num: 0, result: `Knife ${roll(10) <= 7 ? `and a sling with ${roll(10) + roll(10)} stones` : null}` },
-        { num: 1, result: `Dagger ${roll(10) <= 5 ? `and a bow with ${roll(10) + 10} arrows` : null}` },
-        { num: 2, result: `Hatchet ${roll(10) <= 4 ? `and a bow with ${10 + roll(10)} arrows` : null}` },
-        { num: 3, result: `Machete ${roll(10) <= 6 ? `and a bow with ${10 + roll(10)} arrows` : null}` },
+        { num: 0, result: `Knife ${roll(10) <= 7 ? `and a sling with ${roll(10) + roll(10)} stones` : ''}` },
+        { num: 1, result: `Dagger ${roll(10) <= 5 ? `and a bow with ${roll(10) + 10} arrows` : ''}` },
+        { num: 2, result: `Hatchet ${roll(10) <= 4 ? `and a bow with ${10 + roll(10)} arrows` : ''}` },
+        { num: 3, result: `Machete ${roll(10) <= 6 ? `and a bow with ${10 + roll(10)} arrows` : ''}` },
         { num: 4, result: `Dagger and a Javelin` },
         { num: 5, result: `Knife and a spear` },
         { num: 6, result: `Bow with ${10 + roll(10) + roll(10)} arrows, plus, a knife` },

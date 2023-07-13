@@ -4,8 +4,8 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Mutant Epic Generator',
-  description: 'Mutant Epic Character Generators',
+  title: 'Mutant Epoch Generator',
+  description: 'Mutant Epoch Character Generators',
 }
 
 export default function RootLayout({
