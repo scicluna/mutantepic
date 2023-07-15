@@ -1,0 +1,4 @@
+Subtables:
+Technician Skills
+Artifact Weapon Rolls
+Iterative Mutation Rerolls

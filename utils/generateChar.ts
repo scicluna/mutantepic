@@ -202,21 +202,22 @@ export function generateCharacter() {
             primeMutationList.push(randomMutation)
 
             Character.primeMutations = primeMutationList
-
-            const minorMutationList: string[] = []
-            for (let i = 0; i < parseInt(minorNo); i++) {
-                const randomMutation = minMaxTable(minorMutations) as string
-                minorMutationList.push(randomMutation)
-            }
-            Character.minorMutations = minorMutationList
-
-            const flawList: string[] = []
-            for (let i = 0; i < parseInt(flawNo); i++) {
-                const randomMutation = minMaxTable(flaws) as string
-                flawList.push(randomMutation)
-            }
-            Character.flawMutations = flawList
         }
+
+        const minorMutationList: string[] = []
+        for (let i = 0; i < parseInt(minorNo); i++) {
+            const randomMutation = minMaxTable(minorMutations) as string
+            minorMutationList.push(randomMutation)
+        }
+        Character.minorMutations = minorMutationList
+
+        const flawList: string[] = []
+        for (let i = 0; i < parseInt(flawNo); i++) {
+            const randomMutation = minMaxTable(flaws) as string
+            flawList.push(randomMutation)
+        }
+        Character.flawMutations = flawList
+
     }
 
     if (charType === "Ghost Mutant") {
